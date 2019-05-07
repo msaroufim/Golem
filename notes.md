@@ -90,3 +90,6 @@ Experiment format
 * Whole project is really tied to redis
     * redis allows batching of events using the pipeline command
     * Commands like cardinality and counts are all O(1) (as you'd expect from a key value store)
+
+## Version controlled ML
+* https://dvc.org/
