@@ -81,4 +81,12 @@ Experiment format
 * Their tests involve generatin random data
 * Tensorboard has a bunch of typescript scripts in a folder called components. Those files are compared to js and then referenced in some html files which store the data to render a visualization and the rendering logic depending on application
 * Possible to compare two models side by side. Different kinds of viz may be meaningful to look at in competitions. Uses component library called Polymer https://github.com/Polymer/polymer
-* 
+
+
+## Leaderboard python
+* https://github.com/agoragames/leaderboard-python
+* Can get specific ranks, ranks around a player and top X
+* Can add conditional functions that need to evaluate to true before you make an addition to the leaderboard
+* Whole project is really tied to redis
+    * redis allows batching of events using the pipeline command
+    * Commands like cardinality and counts are all O(1) (as you'd expect from a key value store)
